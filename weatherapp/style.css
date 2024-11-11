@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d9d9d9;
+}
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #9DD9D2;
+    width: 35%;
+    height: 10%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.2px solid rgba(128, 128, 128, 0.467);
+    border-radius: 2%;
+    transition: height 0.5s ease-in ;
+}
+@media (min-width:200px) and (max-width:1025px) {
+    #container {
+        width: 95%;
+    }
+}
+.input_area {
+    margin-top: 2%;
+    height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.error {
+    margin-top: 2%;
+    display: none;
+    font-size: 1.25em;
+    color: #eb5668;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.area {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.mg {
+    margin-left: 5%;
+    font-size: 2rem;
+}
+.mg:hover{
+    opacity: 55%;
+}
+input {
+    height: 100%;
+    width: 100%;
+    border: 0.2px solid rgba(128, 128, 128, 0.467);
+    border-radius: 5px;
+    outline: none;
+    padding-left: 3%;
+    font-size: 1rem;
+}
+.location_name {
+    font-size: 3rem;
+    color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wi {
+    font-size: 7rem;
+    color: #001d3d;
+}
+.weather_condition {
+    font-size: 2rem;
+    color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20%;
+    width: 100%;
+}
+.temperature, .humidity {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1%;
+}
+.tw {
+    font-size: 5rem;
+    text-align: center;
+}
+.text {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #f8f9fa;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: #000000;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
